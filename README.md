@@ -1,4 +1,4 @@
-This was ripped from the [DuckDuckGo Privacy Browser for macOS](https://spreadprivacy.com/introducing-duckduckgo-for-mac/). References to the repository link have been changed to match -- you can see [the unmodified README](RREADME_unmodified.md) as-is if you prefer.
+This repository was ripped from the [DuckDuckGo Privacy Browser for macOS](https://spreadprivacy.com/introducing-duckduckgo-for-mac/).
 
 ---
 
@@ -14,7 +14,7 @@ DuckDuckGo Privacy Dashboard is distributed under the Apache 2.0
 To add this repo as a submodule, run:
 
 ```shell
-git submodule add https://github.com/duckduckgo-other/duckduckgo-privacy-dashboard
+git submodule add https://github.com/more-duckduckgo-org/duckduckgo-privacy-dashboard
 git config -f .gitmodules submodule.duckduckgo-privacy-dashboard.branch main
 ```
 
