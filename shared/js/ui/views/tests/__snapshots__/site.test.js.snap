@@ -1,0 +1,2778 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site view when cookie consent popups are hidden renders the correct output 1`] = `
+<div
+  id="test-container"
+>
+  <div
+    class="site-info site-info--main"
+  >
+    <div
+      class="popover-title border--bottom"
+    >
+      <h1>
+        example.com
+      </h1>
+    </div>
+    <ul
+      class="default-list card-list"
+    >
+      <li
+        class="site-info__li--toggle padded is-active"
+      >
+        <p
+          class="site-info__protection js-site-protection"
+        >
+          <span>
+            Protections are 
+            <b>
+              ENABLED
+            </b>
+             for this site
+          </span>
+        </p>
+        <div
+          class="site-info__toggle-container"
+        >
+          <button
+            aria-pressed="true"
+            class="toggle-button toggle-button--is-active-true js-site-toggle pull-right"
+            data-key=""
+            type="button"
+          >
+            <div
+              class="toggle-button__bg"
+            />
+            <div
+              class="toggle-button__knob"
+            />
+          </button>
+        </div>
+      </li>
+      <li
+        class="js-site-show-page-trackers site-info__li--key-insight"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div
+            class="site-info__key-insight site-info__key-insight--trackers-blocked"
+          >
+            <h2>
+              Who We Blocked
+            </h2>
+            <div>
+              We blocked Google and Index Exchange from trying to track you.
+            </div>
+          </div>
+          <div
+            class="site-info__key-insight_trackers-icons"
+          >
+            
+                
+                
+            <span
+              class="site-info__tracker__icon-wrapper"
+            >
+               
+              <span
+                class="site-info__tracker__icon I color-15 indexexchange"
+              />
+              
+            </span>
+            <span
+              class="site-info__tracker__icon-wrapper"
+            >
+               
+              <span
+                class="site-info__tracker__icon G color-8 google"
+              />
+              
+            </span>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-tracker-networks js-site-show-page-trackers site-info__li--trackers padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__trackers-status__icon icon-major-networks-blocked"
+              />
+               
+              <span
+                class="is-active bold"
+              >
+                 3 Trackers Blocked
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              We blocked 3 known trackers from 2 companies on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--https-status padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__https-status__icon is-secure"
+              />
+               
+              <span
+                class="bold"
+              >
+                 Connection Is Secure
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              The connection on this page is secure to protect information you send in transit.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-consent-managed site-info__li--consent-managed padded border-light--top"
+      >
+        <div>
+          <div
+            class="site-info__trackers"
+          >
+            <span
+              class="site-info__https-status__icon is-secure"
+            />
+             
+            <span
+              class="bold"
+            >
+              Cookies Minimized
+            </span>
+            
+          </div>
+          <div
+            class="action-description"
+          >
+            We set your cookie preferences to maximize privacy and closed the consent pop-up.
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="site-info__li--manage-permissions"
+      >
+        
+            
+        <div
+          class="site-info__page-permission border-light--bottom--inner"
+        >
+          <label>
+            <div>
+              <div
+                class="site-info__page-permission__icon camera"
+              />
+              Camera
+            </div>
+            <select
+              class="js-site-permission"
+              name="camera"
+            >
+              
+                        
+              <option
+                value="ask"
+              >
+                Ask every time
+              </option>
+              <option
+                value="grant"
+              >
+                Always allow
+              </option>
+              <option
+                selected="selected"
+                value="deny"
+              >
+                Always deny
+              </option>
+            </select>
+          </label>
+        </div>
+        <div
+          class="site-info__page-permission border-light--bottom--inner"
+        >
+          <label>
+            <div>
+              <div
+                class="site-info__page-permission__icon microphone"
+              />
+              Microphone
+            </div>
+            <select
+              class="js-site-permission"
+              name="microphone"
+            >
+              
+                        
+              <option
+                selected="selected"
+                value="ask"
+              >
+                Ask every time
+              </option>
+              <option
+                value="grant"
+              >
+                Always allow
+              </option>
+              <option
+                value="deny"
+              >
+                Always deny
+              </option>
+            </select>
+          </label>
+        </div>
+        <div
+          class="site-info__page-permission border-light--bottom--inner"
+        >
+          <label>
+            <div>
+              <div
+                class="site-info__page-permission__icon geolocation"
+              />
+              Geolocation
+            </div>
+            <select
+              class="js-site-permission"
+              name="geolocation"
+            >
+              
+                        
+              <option
+                selected="selected"
+                value="ask"
+              >
+                Ask every time
+              </option>
+              <option
+                value="deny"
+              >
+                Always deny
+              </option>
+            </select>
+          </label>
+        </div>
+        <div
+          class="site-info__page-permission "
+        >
+          <label>
+            <div>
+              <div
+                class="site-info__page-permission__icon popups"
+              />
+              Pop-ups
+            </div>
+            <select
+              class="js-site-permission"
+              name="popups"
+            >
+              
+                        
+              <option
+                selected="selected"
+                value="notify"
+              >
+                Notify
+              </option>
+              <option
+                value="grant"
+              >
+                Always allow
+              </option>
+              <option
+                value="deny"
+              >
+                Always deny
+              </option>
+            </select>
+          </label>
+        </div>
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="js-site-manage-whitelist-li site-info__li--manage-whitelist"
+      >
+        <div
+          class="manage-whitelist border--top"
+        >
+          <a
+            class="js-site-report-broken site-info__report-broken"
+            href="javascript:void(0)"
+          >
+             Website not working as expected?
+          </a>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Site view when permissions are set renders the correct output 1`] = `
+<div
+  id="test-container"
+>
+  <div
+    class="site-info site-info--main"
+  >
+    <div
+      class="popover-title border--bottom"
+    >
+      <h1>
+        example.com
+      </h1>
+    </div>
+    <ul
+      class="default-list card-list"
+    >
+      <li
+        class="site-info__li--toggle padded is-active"
+      >
+        <p
+          class="site-info__protection js-site-protection"
+        >
+          <span>
+            Protections are 
+            <b>
+              ENABLED
+            </b>
+             for this site
+          </span>
+        </p>
+        <div
+          class="site-info__toggle-container"
+        >
+          <button
+            aria-pressed="true"
+            class="toggle-button toggle-button--is-active-true js-site-toggle pull-right"
+            data-key=""
+            type="button"
+          >
+            <div
+              class="toggle-button__bg"
+            />
+            <div
+              class="toggle-button__knob"
+            />
+          </button>
+        </div>
+      </li>
+      <li
+        class="js-site-show-page-trackers site-info__li--key-insight"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div
+            class="site-info__key-insight site-info__key-insight--trackers-blocked"
+          >
+            <h2>
+              Who We Blocked
+            </h2>
+            <div>
+              We blocked Google and Index Exchange from trying to track you.
+            </div>
+          </div>
+          <div
+            class="site-info__key-insight_trackers-icons"
+          >
+            
+                
+                
+            <span
+              class="site-info__tracker__icon-wrapper"
+            >
+               
+              <span
+                class="site-info__tracker__icon I color-15 indexexchange"
+              />
+              
+            </span>
+            <span
+              class="site-info__tracker__icon-wrapper"
+            >
+               
+              <span
+                class="site-info__tracker__icon G color-8 google"
+              />
+              
+            </span>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-tracker-networks js-site-show-page-trackers site-info__li--trackers padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__trackers-status__icon icon-major-networks-blocked"
+              />
+               
+              <span
+                class="is-active bold"
+              >
+                 3 Trackers Blocked
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              We blocked 3 known trackers from 2 companies on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--https-status padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__https-status__icon is-secure"
+              />
+               
+              <span
+                class="bold"
+              >
+                 Connection Is Secure
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              The connection on this page is secure to protect information you send in transit.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="site-info__li--manage-permissions"
+      >
+        
+            
+        <div
+          class="site-info__page-permission "
+        >
+          <label>
+            <div>
+              <div
+                class="site-info__page-permission__icon camera"
+              />
+              Camera
+            </div>
+            <select
+              class="js-site-permission"
+              name="camera"
+            >
+              
+                        
+              <option
+                selected="selected"
+                value="ask"
+              >
+                Ask every time
+              </option>
+              <option
+                value="grant"
+              >
+                Always allow
+              </option>
+              <option
+                value="deny"
+              >
+                Always deny
+              </option>
+            </select>
+          </label>
+        </div>
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="js-site-manage-whitelist-li site-info__li--manage-whitelist"
+      >
+        <div
+          class="manage-whitelist border--top"
+        >
+          <a
+            class="js-site-report-broken site-info__report-broken"
+            href="javascript:void(0)"
+          >
+             Website not working as expected?
+          </a>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Site view when protection is enabled and connection is insecure renders the correct output 1`] = `
+<div
+  id="test-container"
+>
+  <div
+    class="site-info site-info--main"
+  >
+    <div
+      class="popover-title border--bottom"
+    >
+      <h1>
+        example.com
+      </h1>
+    </div>
+    <ul
+      class="default-list card-list"
+    >
+      <li
+        class="site-info__li--toggle padded is-active"
+      >
+        <p
+          class="site-info__protection js-site-protection"
+        >
+          <span>
+            Protections are 
+            <b>
+              ENABLED
+            </b>
+             for this site
+          </span>
+        </p>
+        <div
+          class="site-info__toggle-container"
+        >
+          <button
+            aria-pressed="true"
+            class="toggle-button toggle-button--is-active-true js-site-toggle pull-right"
+            data-key=""
+            type="button"
+          >
+            <div
+              class="toggle-button__bg"
+            />
+            <div
+              class="toggle-button__knob"
+            />
+          </button>
+        </div>
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--key-insight"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div
+            class="site-info__key-insight site-info__key-insight--insecure-connection"
+          >
+            <h2>
+              Take Precautions
+            </h2>
+            <div>
+              Others may be able to intercept sensitive information you send on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-tracker-networks js-site-show-page-trackers site-info__li--trackers padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__trackers-status__icon icon-major-networks-blocked"
+              />
+               
+              <span
+                class="is-active bold"
+              >
+                 3 Trackers Blocked
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              We blocked 3 known trackers from 2 companies on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--https-status padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__https-status__icon is-none"
+              />
+               
+              <span
+                class="bold"
+              >
+                 Connection Could Not Be Secured
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              Others may be able to intercept sensitive information you send on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="site-info__li--manage-permissions"
+      />
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="js-site-manage-whitelist-li site-info__li--manage-whitelist"
+      >
+        <div
+          class="manage-whitelist "
+        >
+          <a
+            class="js-site-report-broken site-info__report-broken"
+            href="javascript:void(0)"
+          >
+             Website not working as expected?
+          </a>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Site view when protection is enabled and connection is secure renders the correct output 1`] = `
+<div
+  id="test-container"
+>
+  <div
+    class="site-info site-info--main"
+  >
+    <div
+      class="popover-title border--bottom"
+    >
+      <h1>
+        example.com
+      </h1>
+    </div>
+    <ul
+      class="default-list card-list"
+    >
+      <li
+        class="site-info__li--toggle padded is-active"
+      >
+        <p
+          class="site-info__protection js-site-protection"
+        >
+          <span>
+            Protections are 
+            <b>
+              ENABLED
+            </b>
+             for this site
+          </span>
+        </p>
+        <div
+          class="site-info__toggle-container"
+        >
+          <button
+            aria-pressed="true"
+            class="toggle-button toggle-button--is-active-true js-site-toggle pull-right"
+            data-key=""
+            type="button"
+          >
+            <div
+              class="toggle-button__bg"
+            />
+            <div
+              class="toggle-button__knob"
+            />
+          </button>
+        </div>
+      </li>
+      <li
+        class="js-site-show-page-trackers site-info__li--key-insight"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div
+            class="site-info__key-insight site-info__key-insight--trackers-blocked"
+          >
+            <h2>
+              Who We Blocked
+            </h2>
+            <div>
+              We blocked Google and Index Exchange from trying to track you.
+            </div>
+          </div>
+          <div
+            class="site-info__key-insight_trackers-icons"
+          >
+            
+                
+                
+            <span
+              class="site-info__tracker__icon-wrapper"
+            >
+               
+              <span
+                class="site-info__tracker__icon I color-15 indexexchange"
+              />
+              
+            </span>
+            <span
+              class="site-info__tracker__icon-wrapper"
+            >
+               
+              <span
+                class="site-info__tracker__icon G color-8 google"
+              />
+              
+            </span>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-tracker-networks js-site-show-page-trackers site-info__li--trackers padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__trackers-status__icon icon-major-networks-blocked"
+              />
+               
+              <span
+                class="is-active bold"
+              >
+                 3 Trackers Blocked
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              We blocked 3 known trackers from 2 companies on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--https-status padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__https-status__icon is-secure"
+              />
+               
+              <span
+                class="bold"
+              >
+                 Connection Is Secure
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              The connection on this page is secure to protect information you send in transit.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="site-info__li--manage-permissions"
+      />
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="js-site-manage-whitelist-li site-info__li--manage-whitelist"
+      >
+        <div
+          class="manage-whitelist "
+        >
+          <a
+            class="js-site-report-broken site-info__report-broken"
+            href="javascript:void(0)"
+          >
+             Website not working as expected?
+          </a>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Site view when protection is enabled and connection was upgraded renders the correct output 1`] = `
+<div
+  id="test-container"
+>
+  <div
+    class="site-info site-info--main"
+  >
+    <div
+      class="popover-title border--bottom"
+    >
+      <h1>
+        example.com
+      </h1>
+    </div>
+    <ul
+      class="default-list card-list"
+    >
+      <li
+        class="site-info__li--toggle padded is-active"
+      >
+        <p
+          class="site-info__protection js-site-protection"
+        >
+          <span>
+            Protections are 
+            <b>
+              ENABLED
+            </b>
+             for this site
+          </span>
+        </p>
+        <div
+          class="site-info__toggle-container"
+        >
+          <button
+            aria-pressed="true"
+            class="toggle-button toggle-button--is-active-true js-site-toggle pull-right"
+            data-key=""
+            type="button"
+          >
+            <div
+              class="toggle-button__bg"
+            />
+            <div
+              class="toggle-button__knob"
+            />
+          </button>
+        </div>
+      </li>
+      <li
+        class="js-site-show-page-trackers site-info__li--key-insight"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div
+            class="site-info__key-insight site-info__key-insight--trackers-blocked"
+          >
+            <h2>
+              Who We Blocked
+            </h2>
+            <div>
+              We blocked Google and Index Exchange from trying to track you.
+            </div>
+          </div>
+          <div
+            class="site-info__key-insight_trackers-icons"
+          >
+            
+                
+                
+            <span
+              class="site-info__tracker__icon-wrapper"
+            >
+               
+              <span
+                class="site-info__tracker__icon I color-15 indexexchange"
+              />
+              
+            </span>
+            <span
+              class="site-info__tracker__icon-wrapper"
+            >
+               
+              <span
+                class="site-info__tracker__icon G color-8 google"
+              />
+              
+            </span>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-tracker-networks js-site-show-page-trackers site-info__li--trackers padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__trackers-status__icon icon-major-networks-blocked"
+              />
+               
+              <span
+                class="is-active bold"
+              >
+                 3 Trackers Blocked
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              We blocked 3 known trackers from 2 companies on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--https-status padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__https-status__icon is-upgraded"
+              />
+               
+              <span
+                class="bold"
+              >
+                 Connection Is Secure
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              We upgraded the connection on this page to protect information you send in transit.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="site-info__li--manage-permissions"
+      />
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="js-site-manage-whitelist-li site-info__li--manage-whitelist"
+      >
+        <div
+          class="manage-whitelist "
+        >
+          <a
+            class="js-site-report-broken site-info__report-broken"
+            href="javascript:void(0)"
+          >
+             Website not working as expected?
+          </a>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Site view when protection is enabled and locale is changed renders the correct output 1`] = `
+<div
+  id="test-container"
+>
+  <div
+    class="site-info site-info--main"
+  >
+    <div
+      class="popover-title border--bottom"
+    >
+      <h1>
+        example.com
+      </h1>
+    </div>
+    <ul
+      class="default-list card-list"
+    >
+      <li
+        class="site-info__li--toggle padded is-active"
+      >
+        <p
+          class="site-info__protection js-site-protection"
+        >
+          <span>
+            protectionsEnabled.title
+          </span>
+        </p>
+        <div
+          class="site-info__toggle-container"
+        >
+          <button
+            aria-pressed="true"
+            class="toggle-button toggle-button--is-active-true js-site-toggle pull-right"
+            data-key=""
+            type="button"
+          >
+            <div
+              class="toggle-button__bg"
+            />
+            <div
+              class="toggle-button__knob"
+            />
+          </button>
+        </div>
+      </li>
+      <li
+        class="js-site-show-page-trackers site-info__li--key-insight"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div
+            class="site-info__key-insight site-info__key-insight--trackers-blocked"
+          >
+            <h2>
+              trackersBlocked.title
+            </h2>
+            <div>
+              trackersBlockedDesc.title
+            </div>
+          </div>
+          <div
+            class="site-info__key-insight_trackers-icons"
+          >
+            
+                
+                
+            <span
+              class="site-info__tracker__icon-wrapper"
+            >
+               
+              <span
+                class="site-info__tracker__icon I color-15 indexexchange"
+              />
+              
+            </span>
+            <span
+              class="site-info__tracker__icon-wrapper"
+            >
+               
+              <span
+                class="site-info__tracker__icon G color-8 google"
+              />
+              
+            </span>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-tracker-networks js-site-show-page-trackers site-info__li--trackers padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__trackers-status__icon icon-major-networks-blocked"
+              />
+               
+              <span
+                class="is-active bold"
+              >
+                 trackerNetworksDesc.title
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              trackerNetworksSummaryOther.title
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--https-status padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__https-status__icon is-secure"
+              />
+               
+              <span
+                class="bold"
+              >
+                 connectionSecure.title
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              connectionDescriptionEncrypted.title
+            </div>
+          </div>
+        </a>
+        
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="site-info__li--manage-permissions"
+      />
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="js-site-manage-whitelist-li site-info__li--manage-whitelist"
+      >
+        <div
+          class="manage-whitelist "
+        >
+          <a
+            class="js-site-report-broken site-info__report-broken"
+            href="javascript:void(0)"
+          >
+             websiteNotWorkingQ.title
+          </a>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Site view when protection is enabled and no trackers are found renders the correct output 1`] = `
+<div
+  id="test-container"
+>
+  <div
+    class="site-info site-info--main"
+  >
+    <div
+      class="popover-title border--bottom"
+    >
+      <h1>
+        example.com
+      </h1>
+    </div>
+    <ul
+      class="default-list card-list"
+    >
+      <li
+        class="site-info__li--toggle padded is-active"
+      >
+        <p
+          class="site-info__protection js-site-protection"
+        >
+          <span>
+            Protections are 
+            <b>
+              ENABLED
+            </b>
+             for this site
+          </span>
+        </p>
+        <div
+          class="site-info__toggle-container"
+        >
+          <button
+            aria-pressed="true"
+            class="toggle-button toggle-button--is-active-true js-site-toggle pull-right"
+            data-key=""
+            type="button"
+          >
+            <div
+              class="toggle-button__bg"
+            />
+            <div
+              class="toggle-button__knob"
+            />
+          </button>
+        </div>
+      </li>
+      <li
+        class="js-site-show-page-trackers site-info__li--key-insight"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div
+            class="site-info__key-insight site-info__key-insight--no-activity"
+          >
+            <h2>
+              No Activity to Report
+            </h2>
+            <div>
+              We didn't find any companies trying to track you on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-tracker-networks js-site-show-page-trackers site-info__li--trackers padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__trackers-status__icon icon-major-networks-blocked"
+              />
+               
+              <span
+                class="is-active bold"
+              >
+                 0 Trackers Found
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              We didn't find any companies trying to track you on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--https-status padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__https-status__icon is-secure"
+              />
+               
+              <span
+                class="bold"
+              >
+                 Connection Is Secure
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              The connection on this page is secure to protect information you send in transit.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="site-info__li--manage-permissions"
+      />
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="js-site-manage-whitelist-li site-info__li--manage-whitelist"
+      >
+        <div
+          class="manage-whitelist "
+        >
+          <a
+            class="js-site-report-broken site-info__report-broken"
+            href="javascript:void(0)"
+          >
+             Website not working as expected?
+          </a>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Site view when protection is enabled and site is owned by tracking network renders the correct output 1`] = `
+<div
+  id="test-container"
+>
+  <div
+    class="site-info site-info--main"
+  >
+    <div
+      class="popover-title border--bottom"
+    >
+      <h1>
+        example.com
+      </h1>
+    </div>
+    <ul
+      class="default-list card-list"
+    >
+      <li
+        class="site-info__li--toggle padded is-active"
+      >
+        <p
+          class="site-info__protection js-site-protection"
+        >
+          <span>
+            Protections are 
+            <b>
+              ENABLED
+            </b>
+             for this site
+          </span>
+        </p>
+        <div
+          class="site-info__toggle-container"
+        >
+          <button
+            aria-pressed="true"
+            class="toggle-button toggle-button--is-active-true js-site-toggle pull-right"
+            data-key=""
+            type="button"
+          >
+            <div
+              class="toggle-button__bg"
+            />
+            <div
+              class="toggle-button__knob"
+            />
+          </button>
+        </div>
+      </li>
+      <li
+        class="js-site-show-page-trackers site-info__li--key-insight"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div
+            class="site-info__key-insight site-info__key-insight--tracker-network"
+          >
+            <h2>
+              Tracker Network
+            </h2>
+            <div>
+              Example (owner of example.com) tracks you across 90% of top sites. We can’t block them on sites they own, but we can on other pages.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-tracker-networks js-site-show-page-trackers site-info__li--trackers padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__trackers-status__icon icon-major-networks-blocked"
+              />
+               
+              <span
+                class="is-active bold"
+              >
+                 3 Trackers Blocked
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              We blocked 3 known trackers from 2 companies on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--https-status padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__https-status__icon is-secure"
+              />
+               
+              <span
+                class="bold"
+              >
+                 Connection Is Secure
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              The connection on this page is secure to protect information you send in transit.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="site-info__li--manage-permissions"
+      />
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="js-site-manage-whitelist-li site-info__li--manage-whitelist"
+      >
+        <div
+          class="manage-whitelist "
+        >
+          <a
+            class="js-site-report-broken site-info__report-broken"
+            href="javascript:void(0)"
+          >
+             Website not working as expected?
+          </a>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Site view when protection is not enabled and connection is insecure renders the correct output 1`] = `
+<div
+  id="test-container"
+>
+  <div
+    class="site-info site-info--main"
+  >
+    <div
+      class="popover-title border--bottom"
+    >
+      <h1>
+        example.com
+      </h1>
+    </div>
+    <ul
+      class="default-list card-list"
+    >
+      <li
+        class="site-info__li--toggle padded "
+      >
+        <p
+          class="site-info__protection js-site-protection"
+        >
+          <span>
+            Protections have been 
+            <b>
+              DISABLED
+            </b>
+          </span>
+        </p>
+        <div
+          class="site-info__toggle-container"
+        >
+          <button
+            aria-pressed="false"
+            class="toggle-button toggle-button--is-active-false js-site-toggle pull-right"
+            data-key=""
+            type="button"
+          >
+            <div
+              class="toggle-button__bg"
+            />
+            <div
+              class="toggle-button__knob"
+            />
+          </button>
+        </div>
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--key-insight"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div
+            class="site-info__key-insight site-info__key-insight--insecure-connection"
+          >
+            <h2>
+              Take Precautions
+            </h2>
+            <div>
+              Others may be able to intercept sensitive information you send on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-tracker-networks js-site-show-page-trackers site-info__li--trackers padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__trackers-status__icon icon-major-networks-warning"
+              />
+               
+              <span
+                class=" bold"
+              >
+                 9 Trackers Found
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              We found 9 known trackers from 3 companies on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--https-status padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__https-status__icon is-none"
+              />
+               
+              <span
+                class="bold"
+              >
+                 Connection Could Not Be Secured
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              Others may be able to intercept sensitive information you send on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="site-info__li--manage-permissions"
+      />
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="js-site-manage-whitelist-li site-info__li--manage-whitelist"
+      >
+        <div
+          class="manage-whitelist "
+        >
+          <a
+            class="js-site-report-broken site-info__report-broken"
+            href="javascript:void(0)"
+          >
+             Website not working as expected?
+          </a>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Site view when protection is not enabled and connection is secure renders the correct output 1`] = `
+<div
+  id="test-container"
+>
+  <div
+    class="site-info site-info--main"
+  >
+    <div
+      class="popover-title border--bottom"
+    >
+      <h1>
+        example.com
+      </h1>
+    </div>
+    <ul
+      class="default-list card-list"
+    >
+      <li
+        class="site-info__li--toggle padded "
+      >
+        <p
+          class="site-info__protection js-site-protection"
+        >
+          <span>
+            Protections have been 
+            <b>
+              DISABLED
+            </b>
+          </span>
+        </p>
+        <div
+          class="site-info__toggle-container"
+        >
+          <button
+            aria-pressed="false"
+            class="toggle-button toggle-button--is-active-false js-site-toggle pull-right"
+            data-key=""
+            type="button"
+          >
+            <div
+              class="toggle-button__bg"
+            />
+            <div
+              class="toggle-button__knob"
+            />
+          </button>
+        </div>
+      </li>
+      <li
+        class="js-site-show-page-trackers site-info__li--key-insight"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div
+            class="site-info__key-insight site-info__key-insight--protections-off"
+          >
+            <h2>
+              Protections are DISABLED
+            </h2>
+            <div>
+              We found Google, Index Exchange and others tracking and profiling you on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-tracker-networks js-site-show-page-trackers site-info__li--trackers padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__trackers-status__icon icon-major-networks-warning"
+              />
+               
+              <span
+                class=" bold"
+              >
+                 9 Trackers Found
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              We found 9 known trackers from 3 companies on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--https-status padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__https-status__icon is-secure"
+              />
+               
+              <span
+                class="bold"
+              >
+                 Connection Is Secure
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              The connection on this page is secure to protect information you send in transit.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="site-info__li--manage-permissions"
+      />
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="js-site-manage-whitelist-li site-info__li--manage-whitelist"
+      >
+        <div
+          class="manage-whitelist "
+        >
+          <a
+            class="js-site-report-broken site-info__report-broken"
+            href="javascript:void(0)"
+          >
+             Website not working as expected?
+          </a>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Site view when protection is not enabled and connection was upgraded renders the correct output 1`] = `
+<div
+  id="test-container"
+>
+  <div
+    class="site-info site-info--main"
+  >
+    <div
+      class="popover-title border--bottom"
+    >
+      <h1>
+        example.com
+      </h1>
+    </div>
+    <ul
+      class="default-list card-list"
+    >
+      <li
+        class="site-info__li--toggle padded "
+      >
+        <p
+          class="site-info__protection js-site-protection"
+        >
+          <span>
+            Protections have been 
+            <b>
+              DISABLED
+            </b>
+          </span>
+        </p>
+        <div
+          class="site-info__toggle-container"
+        >
+          <button
+            aria-pressed="false"
+            class="toggle-button toggle-button--is-active-false js-site-toggle pull-right"
+            data-key=""
+            type="button"
+          >
+            <div
+              class="toggle-button__bg"
+            />
+            <div
+              class="toggle-button__knob"
+            />
+          </button>
+        </div>
+      </li>
+      <li
+        class="js-site-show-page-trackers site-info__li--key-insight"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div
+            class="site-info__key-insight site-info__key-insight--protections-off"
+          >
+            <h2>
+              Protections are DISABLED
+            </h2>
+            <div>
+              We found Google, Index Exchange and others tracking and profiling you on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-tracker-networks js-site-show-page-trackers site-info__li--trackers padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__trackers-status__icon icon-major-networks-warning"
+              />
+               
+              <span
+                class=" bold"
+              >
+                 9 Trackers Found
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              We found 9 known trackers from 3 companies on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--https-status padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__https-status__icon is-upgraded"
+              />
+               
+              <span
+                class="bold"
+              >
+                 Connection Is Secure
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              We upgraded the connection on this page to protect information you send in transit.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="site-info__li--manage-permissions"
+      />
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="js-site-manage-whitelist-li site-info__li--manage-whitelist"
+      >
+        <div
+          class="manage-whitelist "
+        >
+          <a
+            class="js-site-report-broken site-info__report-broken"
+            href="javascript:void(0)"
+          >
+             Website not working as expected?
+          </a>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Site view when protection is not enabled and locale is changed renders the correct output 1`] = `
+<div
+  id="test-container"
+>
+  <div
+    class="site-info site-info--main"
+  >
+    <div
+      class="popover-title border--bottom"
+    >
+      <h1>
+        example.com
+      </h1>
+    </div>
+    <ul
+      class="default-list card-list"
+    >
+      <li
+        class="site-info__li--toggle padded "
+      >
+        <p
+          class="site-info__protection js-site-protection"
+        >
+          <span>
+            protectionsDisabled.title
+          </span>
+        </p>
+        <div
+          class="site-info__toggle-container"
+        >
+          <button
+            aria-pressed="false"
+            class="toggle-button toggle-button--is-active-false js-site-toggle pull-right"
+            data-key=""
+            type="button"
+          >
+            <div
+              class="toggle-button__bg"
+            />
+            <div
+              class="toggle-button__knob"
+            />
+          </button>
+        </div>
+      </li>
+      <li
+        class="js-site-show-page-trackers site-info__li--key-insight"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div
+            class="site-info__key-insight site-info__key-insight--protections-off"
+          >
+            <h2>
+              protectionsAreDisabled.title
+            </h2>
+            <div>
+              foundCompanyNamesList.title
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-tracker-networks js-site-show-page-trackers site-info__li--trackers padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__trackers-status__icon icon-major-networks-warning"
+              />
+               
+              <span
+                class=" bold"
+              >
+                 trackerNetworksDesc.title
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              trackerNetworksSummaryOther.title
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--https-status padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__https-status__icon is-secure"
+              />
+               
+              <span
+                class="bold"
+              >
+                 connectionSecure.title
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              connectionDescriptionEncrypted.title
+            </div>
+          </div>
+        </a>
+        
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="site-info__li--manage-permissions"
+      />
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="js-site-manage-whitelist-li site-info__li--manage-whitelist"
+      >
+        <div
+          class="manage-whitelist "
+        >
+          <a
+            class="js-site-report-broken site-info__report-broken"
+            href="javascript:void(0)"
+          >
+             websiteNotWorkingQ.title
+          </a>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Site view when protection is not enabled and no trackers are found renders the correct output 1`] = `
+<div
+  id="test-container"
+>
+  <div
+    class="site-info site-info--main"
+  >
+    <div
+      class="popover-title border--bottom"
+    >
+      <h1>
+        example.com
+      </h1>
+    </div>
+    <ul
+      class="default-list card-list"
+    >
+      <li
+        class="site-info__li--toggle padded "
+      >
+        <p
+          class="site-info__protection js-site-protection"
+        >
+          <span>
+            Protections have been 
+            <b>
+              DISABLED
+            </b>
+          </span>
+        </p>
+        <div
+          class="site-info__toggle-container"
+        >
+          <button
+            aria-pressed="false"
+            class="toggle-button toggle-button--is-active-false js-site-toggle pull-right"
+            data-key=""
+            type="button"
+          >
+            <div
+              class="toggle-button__bg"
+            />
+            <div
+              class="toggle-button__knob"
+            />
+          </button>
+        </div>
+      </li>
+      <li
+        class="js-site-show-page-trackers site-info__li--key-insight"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div
+            class="site-info__key-insight site-info__key-insight--protections-off"
+          >
+            <h2>
+              Protections are DISABLED
+            </h2>
+            <div>
+              We didn't find any companies trying to track you on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-tracker-networks js-site-show-page-trackers site-info__li--trackers padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__trackers-status__icon icon-major-networks-blocked"
+              />
+               
+              <span
+                class=" bold"
+              >
+                 0 Trackers Found
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              We didn't find any companies trying to track you on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--https-status padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__https-status__icon is-secure"
+              />
+               
+              <span
+                class="bold"
+              >
+                 Connection Is Secure
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              The connection on this page is secure to protect information you send in transit.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="site-info__li--manage-permissions"
+      />
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="js-site-manage-whitelist-li site-info__li--manage-whitelist"
+      >
+        <div
+          class="manage-whitelist "
+        >
+          <a
+            class="js-site-report-broken site-info__report-broken"
+            href="javascript:void(0)"
+          >
+             Website not working as expected?
+          </a>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Site view when protection is not enabled and site is owned by tracking network renders the correct output 1`] = `
+<div
+  id="test-container"
+>
+  <div
+    class="site-info site-info--main"
+  >
+    <div
+      class="popover-title border--bottom"
+    >
+      <h1>
+        example.com
+      </h1>
+    </div>
+    <ul
+      class="default-list card-list"
+    >
+      <li
+        class="site-info__li--toggle padded "
+      >
+        <p
+          class="site-info__protection js-site-protection"
+        >
+          <span>
+            Protections have been 
+            <b>
+              DISABLED
+            </b>
+          </span>
+        </p>
+        <div
+          class="site-info__toggle-container"
+        >
+          <button
+            aria-pressed="false"
+            class="toggle-button toggle-button--is-active-false js-site-toggle pull-right"
+            data-key=""
+            type="button"
+          >
+            <div
+              class="toggle-button__bg"
+            />
+            <div
+              class="toggle-button__knob"
+            />
+          </button>
+        </div>
+      </li>
+      <li
+        class="js-site-show-page-trackers site-info__li--key-insight"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div
+            class="site-info__key-insight site-info__key-insight--protections-off"
+          >
+            <h2>
+              Protections are DISABLED
+            </h2>
+            <div>
+              We found Google, Index Exchange and others tracking and profiling you on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-tracker-networks js-site-show-page-trackers site-info__li--trackers padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__trackers-status__icon icon-major-networks-warning"
+              />
+               
+              <span
+                class=" bold"
+              >
+                 9 Trackers Found
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              We found 9 known trackers from 3 companies on this page.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+      <li
+        class="js-site-show-page-connection site-info__li--https-status padded border-light--top"
+      >
+        <a
+          class="link-action"
+          href="javascript:void(0)"
+          role="button"
+        >
+           
+          <div>
+            <div
+              class="site-info__trackers"
+            >
+              <span
+                class="site-info__https-status__icon is-secure"
+              />
+               
+              <span
+                class="bold"
+              >
+                 Connection Is Secure
+              </span>
+               
+              <span
+                class="icon icon__arrow pull-right"
+              />
+              
+            </div>
+            <div
+              class="action-description"
+            >
+              The connection on this page is secure to protect information you send in transit.
+            </div>
+          </div>
+        </a>
+        
+      </li>
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="site-info__li--manage-permissions"
+      />
+    </ul>
+    <ul
+      class="default-list"
+    >
+      <li
+        class="js-site-manage-whitelist-li site-info__li--manage-whitelist"
+      >
+        <div
+          class="manage-whitelist "
+        >
+          <a
+            class="js-site-report-broken site-info__report-broken"
+            href="javascript:void(0)"
+          >
+             Website not working as expected?
+          </a>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

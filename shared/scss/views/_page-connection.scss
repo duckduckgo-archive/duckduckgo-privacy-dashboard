@@ -1,0 +1,61 @@
+.hero__icon--connection-secure,
+.hero__icon--connection-upgraded {
+  @include cross_platform_bg_image("refresh-assets/Locked-96.svg");
+}
+
+.hero__icon--connection-none {
+  @include cross_platform_bg_image("refresh-assets/Unlocked-96.svg");
+}
+
+.certificate-header {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 9px 0;
+  text-align: center;
+
+  @media (prefers-color-scheme: dark) {
+    color: rgba(255, 255, 255, 0.5);
+}
+}
+
+.page-connection {
+  &__certificate {
+    margin: -16px 0;
+    padding: 0 16px;
+  }
+
+  &__certificate-details {
+    padding: 18px 0;
+
+    h3 {
+      color: $slate-dark;
+      font-size: 13px;
+      margin-bottom: 14px;
+
+      @media (prefers-color-scheme: dark) {
+        color: $color--off-white;
+      }
+    }
+
+    > div {
+      color: $slate;
+      display: flex;
+      font-size: 13px;
+      margin-top: 6px;
+      justify-content: space-between;
+
+      @media (prefers-color-scheme: dark) {
+        color: $color--off-white;
+      }
+    }
+  }
+
+  &__certificate-value {
+    color: $gray-seventy;
+
+    @media (prefers-color-scheme: dark) {
+      color: $gray-fifty;
+    }
+  }
+}

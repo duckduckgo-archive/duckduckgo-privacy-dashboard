@@ -1,0 +1,428 @@
+@import "vars";
+@import "mixins";
+
+
+/* Popup */
+html, body {
+    width: $popup__width;
+    line-height: 18px;
+}
+
+body {
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#popup-container {
+
+    > section {
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    section::-webkit-scrollbar {
+        display: none;
+    }
+
+    .popover-title {
+        background-color: $white;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 22px;
+        padding: 11px;
+        text-align: center;
+
+        @media (prefers-color-scheme: dark) {
+            background-color: $slate;
+        }
+    }
+
+    .failover.card {
+        position: absolute;
+        top: 14px;
+        right: 7px;
+        bottom: 63px;
+        left: 7px;
+
+        p {
+            padding: 7px 21px;
+            font-weight: bold;
+            font-size: 15px;
+            color: $platinum-darker;
+        }
+    }
+
+    .text-line-after-icon {
+        margin-left: 12px;
+    }
+
+    .action-description {
+        margin: 10px 0 0 -24px;
+        padding-right: 20px;
+    }
+
+    .site-info {
+        margin-top: 0;
+
+        .default-list {
+            padding-bottom: 0;
+        }
+
+        .card-list {
+            background-color: $white;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 0px rgba(0, 0, 0, 0.1);
+            padding-bottom: 5px;
+
+            @media (prefers-color-scheme: dark) {
+                background-color: $slate;
+            }
+        }
+
+        .text-line-after-icon.privacy-on-off-message {
+           margin-left: 2px;
+        }
+
+        .site-info__trackers {
+            margin: 2px 0 0 5px;
+        }
+
+        .site-info__protection {
+            opacity: 1;
+            margin-top: 0;
+            max-height: 20px;
+            margin-left: 3px;
+        }
+
+        .site-info__li--toggle {
+            color: $slate;
+            padding-top: 12px;
+
+            @media (prefers-color-scheme: dark) {
+                color: $color--off-white;
+            }
+
+            .is-disabled & {
+                @include is_disabled();
+            }
+        }
+
+        .site-info__toggle-container {
+            position: absolute;
+            right: 24px;
+            top: 13px;
+
+            .toggle-button {
+                position: absolute;
+                right: -6px;
+                top: -1px;
+            }
+
+            .toggle-button--is-active-true {
+                .toggle-button__bg {
+                    background-color: $color--blue;
+                }
+            }
+            .toggle-button--is-active-false {
+                .toggle-button__bg {
+                    background-color: $color--medium-silver;
+                }
+            }
+        }
+
+        .site-info__li--https-status {
+            position: relative;
+            padding-left: 35px;
+            cursor: pointer;
+            margin: 0 8px;
+
+            &:hover {
+                border-radius: 6px;
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+
+            &:hover, &:hover + li {
+                border-color: transparent;
+            }
+
+            .is-disabled & {
+                @include is_disabled();
+            }
+        }
+
+        .site-info__li--consent-managed {
+            position: relative;
+            padding-left: 35px;
+            margin: 0 8px;
+        }
+
+        @mixin site_status_icons () {
+            position: absolute;
+            top: 18px;
+            left: 12px;
+        }
+
+        .site-info__https-status__icon {
+            @include icon_display();
+            @include site_status_icons();
+
+            &.is-secure, // default = secure, https
+            &.is-upgraded {
+                @include cross_platform_bg_image($status--good);
+            }
+
+            &.is-none,
+            &.is-insecure { // none = insecure, http
+                @include cross_platform_bg_image($status--bad);
+            }
+        }
+
+        .site-info__li--manage-permissions {
+            margin: 0 20px;
+
+            .site-info__page-permission {
+                &__icon {
+                    @include icon_display();
+                    margin-right: 8px;
+
+                    &.geolocation {
+                        @include cross_platform_bg_image("refresh-assets/permissions-location.svg");
+
+                        @media (prefers-color-scheme: dark) {
+                            @include cross_platform_bg_image("refresh-assets/permissions-location-light.svg");
+                        }
+                    }
+
+                    &.microphone {
+                        @include cross_platform_bg_image("refresh-assets/permissions-microphone.svg");
+
+                        @media (prefers-color-scheme: dark) {
+                            @include cross_platform_bg_image("refresh-assets/permissions-microphone-light.svg");
+                        }
+
+                        margin-top: -2px;
+                    }
+
+                    &.camera {
+                        @include cross_platform_bg_image("refresh-assets/permissions-camera.svg");
+
+                        @media (prefers-color-scheme: dark) {
+                            @include cross_platform_bg_image("refresh-assets/permissions-camera-light.svg");
+                        }
+
+                        width: 16px;
+                        height: 12px;
+                        margin-top: -2px;
+                    }
+
+                    &.popups {
+                        @include cross_platform_bg_image("refresh-assets/permissions-popups.svg");
+
+                        @media (prefers-color-scheme: dark) {
+                            @include cross_platform_bg_image("refresh-assets/permissions-popups-light.svg");
+                        }
+                    }
+
+                    &.externalScheme {
+                        @include cross_platform_bg_image("refresh-assets/permissions-externalScheme.svg");
+
+                        @media (prefers-color-scheme: dark) {
+                            @include cross_platform_bg_image("refresh-assets/permissions-externalScheme-light.svg");
+                        }
+                        
+                        margin-top: -4px;
+                    }
+
+                    &.notification {
+                        @include cross_platform_bg_image("refresh-assets/permissions-notification.svg");
+
+                        @media (prefers-color-scheme: dark) {
+                            @include cross_platform_bg_image("refresh-assets/permissions-notification-light.svg");
+                        }
+
+                        width: 16px;
+                        height: 14px;
+                        margin-top: -4px;
+                    }
+                }
+
+                label {
+                    display: flex;
+                    font-weight: bold;
+                    justify-content: space-between;
+                    overflow: hidden;
+                    padding: 16px 0;
+                }
+
+                select {
+                    float: right;
+                    max-width: 170px;
+                }
+            }
+        }
+
+        .site-info__li--trackers {
+            position: relative;
+            padding-left: 35px;
+            cursor: pointer;
+            margin: 0 8px;
+
+            &:hover {
+                border-radius: 6px;
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+
+            &:hover, &:hover + li {
+                border-color: transparent;
+            }
+
+            .is-disabled & {
+                @include is_disabled();
+            }
+
+            .site-info__trackers {
+
+                .site-info__trackers-status__icon {
+                    @include icon_display();
+                    @include site_status_icons();
+
+                    &.is-blocking--true {
+                        @include cross_platform_bg_image("blocking--on.svg");
+                    }
+
+                    &.is-blocking--false {
+                        @include cross_platform_bg_image("blocking--off.svg");
+                    }
+                }
+
+                .float-right {
+                    max-width: 140px;
+                    text-align: right;
+                    color: $color--grey;
+                    line-height: 20px;
+
+                    &.is-active {
+                        color: $color--green;
+                    }
+                }
+            }
+        }
+
+        .site-info__li--key-insight {
+            position: relative;
+            padding: 5px 25px 12px;
+            cursor: pointer;
+            margin: 0 8px;
+
+            &:hover {
+                border-radius: 6px;
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+
+            &:hover, &:hover + li {
+                border-color: transparent;
+            }
+
+            .is-disabled & {
+                @include is_disabled();
+            }
+
+            .site-info__key-insight {
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: 134px;
+                padding-top: 100px;
+                text-align: center;
+
+                &--trackers-blocked {
+                    @include cross_platform_bg_image("refresh-assets/Shield-128.svg");
+                }
+
+                &--protections-off {
+                    @include cross_platform_bg_image("refresh-assets/Block-Disabled-128.svg");
+                }
+
+                &--no-activity {
+                    @include cross_platform_bg_image("refresh-assets/Counter-128.svg");
+                }
+
+                &--tracker-network {
+                    @include cross_platform_bg_image("refresh-assets/Network-128.svg");
+                }
+
+                &--insecure-connection {
+                    @include cross_platform_bg_image("refresh-assets/Unlocked-128.svg");
+                }
+
+                h2 {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .site-info__li--manage-whitelist {
+            text-align: center;
+
+            .is-disabled & {
+                @include is_disabled();
+            }
+
+            .manage-whitelist {
+                padding: 16px 16px 16px 18px;
+            }
+        }
+
+        .site-info--is-site-broken {
+            display: inline-block;
+            margin: 0 8px 0 3px;
+        }
+
+        .btn-pill {
+            @include btn-pill(12px);
+            margin: -2px 0 0 2px;
+        }
+
+        .link-secondary {
+            @include is_disableable_link();
+        }
+    }
+
+    .site-info__report-broken {
+        font-size: 13px;
+    }
+
+    // main popup view has a coloured hero section
+    // so it doesn't need the extra space on top
+    .site-info--main {
+        top: auto;
+    }
+
+    .sliding-subview {
+        background-color: $white;
+        overflow-y: auto;
+
+        @media (prefers-color-scheme: dark) {
+            background-color: $slate;
+        }
+    }
+}
+
+@import "views/search-form";
+@import "views/hero";
+@import "views/status-list";
+@import "views/tracker-networks";
+@import "views/page-connection";
+@import "views/breakage-form";
+
+/* Generic menu list styling */
+@include default_list();
+
+
+/* Generic toggle button styling */
+@include toggle_button();
+
+
+/* Sliding subviews */
+@include sliding_subview();

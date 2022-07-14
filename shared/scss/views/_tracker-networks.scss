@@ -1,0 +1,157 @@
+.tracker-networks {
+    .hero__icon {
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 94px;
+        height: 72px;
+        width: 100%;
+    }
+    .hero__subtitle {
+        line-height: 18px;
+    }
+
+    .tracker-networks__explainer {
+        padding: 10px 22px 6px;
+    }
+
+    .tracker-list-header {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 13px;
+        font-weight: bold;
+        padding: 9px 0;
+        text-align: center;
+
+        @media (prefers-color-scheme: dark) {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+
+.hero__icon--major-networks-blocked {
+    @include cross_platform_bg_image("refresh-assets/Shield-128.svg");
+}
+
+.icon-major-networks-blocked {
+    @include cross_platform_bg_image($status--good);
+}
+
+.hero__icon--major-networks-warning {
+    @include cross_platform_bg_image("refresh-assets/Block-Disabled-128.svg");
+}
+
+.icon-major-networks-warning {
+    @include cross_platform_bg_image($status--bad);
+}
+
+.hero__icon--major-networks-mixed {
+    @include cross_platform_bg_image("refresh-assets/Block-Allowed-96.svg");
+}
+
+.icon-major-networks-mixed {
+    @include cross_platform_bg_image($status--mixed);
+}
+
+#popup-container .tracker-networks .default-list.site-info__trackers__company-list__url-list {
+    padding-bottom: 20px;
+    padding-top: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+
+    li {
+        padding-top: 0;
+    }
+}
+
+.site-info__tracker__icon {
+    @include tracker_network_icons_subview();
+    @include tracker_network_icons_colors();
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: contain;
+}
+
+.site-info .default-list .site-info__li--key-insight {
+    .site-info__key-insight_trackers-icons {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin-top: 8px;
+        margin-left: -9px;
+    }
+
+    .site-info__tracker__icon-wrapper {
+        background-color: $color--dark-platinum;
+        border-radius: 50%;
+        border: 2px solid $white;
+        display: inline-block;
+        font-size: 11px;
+        font-weight: bold;
+        margin: 0 -9px 0 0;
+        height: 20px;
+        width: 20px;
+        padding: 3px;
+        text-align: center;
+
+        @media (prefers-color-scheme: dark) {
+            background-color: $gray-ninety;
+            border-color: $slate;
+        }
+    }
+
+    .site-info__tracker__count {
+        display: inline-block;
+        letter-spacing: -0.7px;
+        margin-left: 2px;
+    }
+
+    .site-info__tracker__icon {
+        margin: 0;
+    }
+}
+
+.tracker-networks .default-list.site-info__trackers__company-list {
+    .site-info__tracker__icon {
+        position: relative;
+        top: -1px;
+    }
+}
+
+.tracker-networks h1.site-info__domain {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.38;
+    letter-spacing: -0.2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 12px;
+}
+
+.site-info__trackers__company-list-item {
+    margin-top: 20px;
+}
+
+.site-info__trackers__company-list__url-list {
+    .url {
+        width: 65%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .category {
+        text-transform: uppercase;
+        font-size: 12px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline-block;
+        padding: 0 8px;
+        background-color: $color--dark-platinum;
+        border-radius: 33px;
+        color: rgba(0, 0, 0, 0.5);
+
+        @media (prefers-color-scheme: dark) {
+            background-color: $color--medium-dark-slate;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
